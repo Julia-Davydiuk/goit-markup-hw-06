@@ -517,18 +517,26 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
-         <form action="#" class="modal-form">
-            <input type="text" name="user-name" class="modal-form-input">
-            <input type="tel" name="user-phone" class="modal-form-input">
-            <input type="email" name="user-email" class="modal-form-input">
-            <textarea name="user-message" id="" cols="30" rows="10" class="modal-form-message"></textarea>
-            <input type="checkbox" name="user-polisy" value="accept-policy" class="modal-form-policy">
-            <button type="submit" class="modal-form-btn">Отправить</button>
-         </form>
+        <button type="button" class="close-btn" data-modal-close></button>
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="#" class="modal-form">
 
+          <label class="modal-form-field">Имя*
+          <input type="text" name="user-name" class="modal-form-input" required>
+          </label>
 
-        </button>
+          <lable class="modal-form-field">Телефон*
+          <input type="tel" name="user-phone" class="modal-form-input" required>
+          </lable>
+
+          <lable class="modal-form-field">Почта*
+          <input type="email" name="user-email" class="modal-form-input" required>
+          </lable>
+
+          <textarea name="user-message" id="" cols="30" rows="10" class="modal-form-message"></textarea>
+          <input type="checkbox" name="user-polisy" value="accept-policy" class="modal-form-policy">
+          <button type="submit" class="modal-form-btn">Отправить</button>
+        </form>
       </div>
     </div>
 
