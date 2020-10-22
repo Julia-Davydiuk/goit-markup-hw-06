@@ -522,22 +522,39 @@
         <form action="#" class="modal-form">
 
           <label class="modal-form-field">Имя*
-          <input type="text" name="user-name" class="modal-form-input" required>
-          <svg class="modal-form-svg-icon">
-            use.
-          </svg>
+            <span class="modal-form-field-wrapper">
+              <input type="text" name="user-name" class="modal-form-input" required>
+              <svg width="12" height="12" class="modal-form-svg-icon">
+                <use href="./image/icon/sprite.svg#icon-person"></use>
+              </svg>
+            </span>
           </label>
 
-          <lable class="modal-form-field">Телефон*
-          <input type="tel" name="user-phone" class="modal-form-input" required>
-          </lable>
+         <lable class="modal-form-field">Телефон*
+           <span class="modal-form-field-wrapper">
+             <input type="tel" name="user-phone" class="modal-form-input" required>
+             <svg width="12" height="12" class="modal-form-svg-icon">
+               <use href="./image/icon/sprite.svg#icon-phone"></use>
+             </svg>
+           </span>
+         </lable>
 
           <lable class="modal-form-field">Почта*
-          <input type="email" name="user-email" class="modal-form-input" required>
-          </lable>
+            <span class="modal-form-field-wrapper">
+              <input type="email" name="user-email" class="modal-form-input" required>
+              <svg width="12" height="12" class="modal-form-svg-icon">
+                <use href="./image/icon/sprite.svg#icon-email"></use>
+              </svg>
+            </span>
+          
+         </lable>
 
-          <textarea name="user-message" id="" cols="30" rows="10" class="modal-form-message"></textarea>
+         <label class="modal-form-field">Комментарий
+           <textarea name="user-message" id="" cols="30" rows="10" class="modal-form-message" placeholder="Введите комментарий"></textarea>
+         </label>
+
           <input type="checkbox" name="user-polisy" value="accept-policy" class="modal-form-policy">
+
           <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
       </div>
