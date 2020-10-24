@@ -593,6 +593,7 @@ input {
 }
 
 .footer-title {
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -824,6 +825,7 @@ input {
   background-image: url(../image/icon/Vector.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  transform: translate(30%, 20%);
 }
 
 .modal-form-policy-label {
